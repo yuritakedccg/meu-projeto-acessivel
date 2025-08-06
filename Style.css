@@ -1,0 +1,67 @@
+/* Estilos básicos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+a {
+    color: #0066cc;
+}
+
+/* Acessibilidade - Botão e menu */
+.accessibility-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.hidden {
+    display: none;
+}
+
+#accessibility-options {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#accessibility-options button {
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+/* Estilos de alto contraste */
+.high-contrast-mode {
+    background-color: #000;
+    color: #ffff00;
+}
+
+.high-contrast-mode a {
+    color: #ffff00;
+}
