@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Projeto Acessível</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Meu Projeto Acessível</h1>
+        <nav aria-label="Menu principal">
+            <ul>
+                <li><a href="#conteudo-principal">Ir para o conteúdo</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="conteudo-principal">
+        <section>
+            <h2 id="sobre">Sobre o Projeto</h2>
+            <p>Este é um projeto de exemplo focado em boas práticas de acessibilidade web. Utilizamos HTML semântico, CSS para estilização e JavaScript para interatividade, garantindo que o conteúdo seja acessível a todos.</p>
+        </section>
+
+        <section>
+            <h2>Funcionalidades Acessíveis</h2>
+            <p>Neste site, você encontrará:</p>
+            <ul>
+                <li>**Navegação por teclado**: É possível navegar por todos os elementos interativos usando a tecla `Tab`.</li>
+                <li>**Alto contraste**: Um botão de acessibilidade que permite alternar para um tema de alto contraste.</li>
+                <li>**Descrições de imagem**: Todas as imagens (caso existam) possuem textos alternativos (`alt`).</li>
+                <li>**Semântica**: Usamos tags como `<header>`, `<nav>`, `<main>`, `<section>` e `<footer>` para estruturar o conteúdo de forma lógica.</li>
+            </ul>
+        </section>
+
+        <section id="contato">
+            <h2>Formulário de Contato Acessível</h2>
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Meu Projeto Acessível. Todos os direitos reservados.</p>
+        <div class="accessibility-container">
+            <button id="accessibility-btn" aria-label="Botão de Acessibilidade">
+                <span>Acessibilidade</span>
+            </button>
+            <div id="accessibility-options" class="hidden">
+                <button id="high-contrast-btn">Alto Contraste</button>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
